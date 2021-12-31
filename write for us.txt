@@ -6,6 +6,11 @@ import FlareIcon from "@material-ui/icons/Flare";
 import Section4 from "./Section4";
 
 const useStyles = makeStyles({
+section4: { marginTop: "30px", marginBottom: "20px" },
+  section5: { marginTop: "30px", marginBottom: "20px" },
+  section6: { marginTop: "30px", marginBottom: "20px" },
+
+  point: { marginBottom: "10px" }
   bread1: {
     display: "flex",
     color: "grey",
@@ -288,7 +293,69 @@ const writeforus = () => {
           or body on any basis.
         </Typography>
       </div>
-      <Section4 />
+      <div className={classes.section4}>
+      <Typography variant="h5" className={classes.point}>
+        <b> Submission Guidelines</b>
+      </Typography>
+      <Typography variant="subtitle1">
+        If you are fine with the above-mentioned guidelines, you can approach us
+        via write4us@tekslate.com. Filling your details correctly and completely
+        helps us to easily get in touch with you. Your email should include the
+        following:
+      </Typography>
+      <ul className={classes.point}>
+        <li>
+          <Typography variant="subtitle1">
+            Any topic name that you want to write on (However, we will give you
+            the topics to write on)
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="subtitle1">Summary of the </Typography>
+        </li>
+        <li>
+          <Typography variant="subtitle1">
+            Links of your previous work to showcase your credibility
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="subtitle1">Author Bio</Typography>
+        </li>
+      </ul>
+      <Typography variant="subtitle1" className={classes.point}>
+        At first, we will give a topic for you to write on. However, you also
+        can suggest a topic, and we will consider it depending on how much value
+        it adds to our blog. Once you submit the article (submit the article
+        only in Google Docs) for review, we may accept the article, or reject it
+        outright, or work with you (for making necessary changes) till we find
+        the article suitable for our site. While working with you after you
+        submit the article for review, if we feel that your changes aren’t
+        satisfactory, we will reject your article.
+      </Typography>
+      <Typography variant="subtitle1" className={classes.point}>
+        If we accept your article, we will add it to our publishing queue, and
+        will send you an acknowledgement email once it goes live on our site.
+      </Typography>
+      <Typography variant="h5" className={classes.section5}>
+        <b> Copyrights Violation</b>
+      </Typography>
+      <Typography variant="subtitle1" className={classes.point}>
+        Lawfully you are responsible for your content.
+      </Typography>
+      <Typography variant="subtitle1" className={classes.point}>
+        You are liable when you are posting work or content which is legal. You
+        are responsible in case when a guest post violates others’ copyrights.
+        Guest blogging is a great opportunity and one deserves the right
+        recognition for his/her skills.
+      </Typography>
+      <Typography variant="h5" className={classes.section6}>
+        <b>We will help you promote your article!</b>
+      </Typography>
+      <Typography variant="subtitle1" className={classes.point}>
+        We help in promoting your article on our social media platforms. We will
+        help you get your content noticed by more numbers of users.
+      </Typography>
+    </div>
     </Container>
   );
 };
