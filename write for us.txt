@@ -1,0 +1,295 @@
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import { Link, Grid, Container, Paper } from "@material-ui/core";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import FlareIcon from "@material-ui/icons/Flare";
+import Section4 from "./Section4";
+
+const useStyles = makeStyles({
+  bread1: {
+    display: "flex",
+    color: "grey",
+    paddingBottom: "20px"
+  },
+  section2: {
+    marginTop: "30px"
+  },
+  titleIcon2: {
+    display: "flex",
+    flexDirection: "row",
+    padding: "20px",
+    width: "350px",
+    height: "50px",
+    boxShadow: "0 2px 18px 0 rgb(0 0 0 / 8%)",
+    color: "unset !important",
+    justifyContent: "center",
+    marginTop: "10px"
+  },
+  titleIcon: { flex: "0.5" },
+  titleIcon1: { flex: "0.5" },
+  titleIcon3: { flex: "2" },
+  section1: {
+    display: "flex",
+    gap: "5px"
+  },
+  right: {
+    background: "black",
+    flex: "1",
+    color: "white"
+  },
+  left: {
+    flex: "1",
+    lineHeight: "10px"
+  },
+  answer1: {
+    paddingBottom: "15px",
+    color: "grey"
+  },
+  answer: {
+    paddingBottom: "15px"
+  },
+  section3: {
+    marginLeft: "0px",
+    marginTop: "40px"
+  },
+  ul: { lineHeight: "5px", color: "grey" },
+  box: { color: "red" },
+  refer: { color: "black", textDecoration: "none" }
+});
+const writeforus = () => {
+  const classes = useStyles();
+
+  return (
+    <Container>
+      <div className={classes.root}>
+        <div className={classes.bread1}>
+          <Link
+            variant="subtitle2"
+            href="https://stackoverflow.com/questions/60607586/set-typography-text-color-in-mui"
+          >
+            Home
+          </Link>
+          <Typography variant="subtitle2">/</Typography>
+          <Typography variant="subtitle2">Write for us</Typography>
+        </div>
+        <div className={classes.section1}>
+          <div className={classes.left}>
+            <Typography className={classes.answer} variant="h5">
+              <b>Write for us</b>
+            </Typography>
+            <Typography className={classes.answer1}>
+              Writing for us is a great way to showcase your technical
+              expertise, gain exposure, and earn goodwill. We’re searching for
+              passionate tech professionals to contribute tech-savvy articles to
+              Tekslate. Writing insightful articles boosts your reputation,
+              enhances credibility, and increases brand recognition as a key
+              influencer in the field of IT.
+            </Typography>
+            <Typography className={classes.answer1}>
+              We are partnering with tech specialists, senior executives,
+              directors, and key practitioners in industry discussion, analysis
+              and thought leadership. Enhance your reputation as a discussion
+              leader, using your expertise to engage our audience with
+              insightful and thought leadership articles on various IT
+              platforms.
+            </Typography>
+            <Typography variant="h5" className={classes.answer}>
+              <b> What we're looking for ?</b>
+            </Typography>
+            <Typography className={classes.answer1}>
+              We’re looking for industry professionals who are passionate to
+              submit thought leadership articles to our blog. The articles can
+              be on any technology on which we offer training (you can browse
+              our website to get more info). However, we prefer Tech Articles
+              and Tutorials on the following technologies.
+            </Typography>
+          </div>
+          <div
+            className={classes.right}
+            style={{ display: "grid", placeItems: "center" }}
+          >
+            <div>
+              {" "}
+              <Typography variant="h4" className={classes.box}>
+                <b> Write For Us </b>
+              </Typography>
+              <Typography variant="h5">
+                <b> A Great Oppertunity To Collaborate</b>
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={classes.section2}>
+        <Grid container spacing={2}>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />
+                <Typography className={classes.titleIcon3}>
+                  Cloud Computing
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />{" "}
+                <Typography className={classes.titleIcon3}>
+                  Automation Testing Tools
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />
+                <Typography className={classes.titleIcon3}>
+                  Business Intelligence (BI) Tools
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />{" "}
+                <Typography className={classes.titleIcon3}>
+                  RPA Tools
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />
+                <Typography className={classes.titleIcon3}>
+                  Data Analytics
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <a
+              href="https://mindmajix.com/"
+              target="blank"
+              className={classes.refer}
+            >
+              <Paper className={classes.titleIcon2}>
+                <FlareIcon className={classes.titleIcon} />{" "}
+                <Typography className={classes.titleIcon3}>
+                  Cryptocurrency
+                </Typography>
+                <ArrowForwardIosIcon className={classes.titleIcon1} />
+              </Paper>
+            </a>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className={classes.section3}>
+        <Typography variant="h5">
+          <b>Submission Guidelines</b>
+        </Typography>
+        <ul>
+          <li>
+            <Typography variant="subtitle1">
+              We are looking for a long-term collaboration with writers who can
+              write high-quality technical and programming related content. So,
+              writers who can write this kind of articles can approach us, and
+              we will be happy to collaborate with you.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              We want you to write articles of around 1500 words.
+            </Typography>
+          </li>
+          <li>
+            {" "}
+            <Typography variant="subtitle1">
+              Your post must be unique, original, and plagiarism-free. We will
+              run your article through a plagiarism checker, and if we find any
+              copied content, we will reject it outright.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              Subheadings, paragraph break-ups, and bullet points will make your
+              post more readable.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              Try to keep your sentences short and simple, and try avoiding the
+              usage of passive voice.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              You must include copyright free images wherever required to make
+              the article more visually appealing.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              Once you publish the article on our website, you cannot republish
+              it anywhere else.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              Back your content with authenticity by citing apt reference links.
+              Back your figures and facts by accurate research and statistics.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="subtitle1">
+              You can include ONE link to your company in your Author Bio (It
+              should NOT be our competitor).
+            </Typography>
+          </li>
+        </ul>
+        <Typography variant="subtitle1">
+          Any article not following the above stated standards and norms will
+          get discarded strictly. Approval rights lie in complete possession of
+          our company. Decision-making authority regarding the duration of
+          material stays in the hands of our company. The company will not
+          entertain any further explanations in any regard from any individual
+          or body on any basis.
+        </Typography>
+      </div>
+      <Section4 />
+    </Container>
+  );
+};
+export default writeforus;
